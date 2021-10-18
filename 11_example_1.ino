@@ -82,6 +82,7 @@ if(dist_raw < 180.0) {
   }
   else if(dist_raw < 360.0){
      myservo.writeMicroseconds(duty_servo);
+     digitalWrite(PIN_LED, 1);
   }
   else {
     myservo.writeMicroseconds(_DUTY_MAX);
